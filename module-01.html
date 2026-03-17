@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; color: #4A4A4A; background-color: #FFFFFF; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+        .accent-bar {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 12px;
+            background-color: #0056D2;
+        }
+        .logo {
+            position: absolute;
+            top: 30px;
+            right: 80px;
+            width: 100px;
+            height: auto;
+            object-fit: contain;
+        }
+        .header {
+            padding-top: 60px;
+            padding-left: 80px;
+            padding-right: 80px;
+            margin-bottom: 40px;
+        }
+        .header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 48px;
+            color: #1A1A1A;
+            text-transform: uppercase;
+        }
+        .header .subtitle {
+            font-size: 20px;
+            color: #0056D2;
+            margin-top: 10px;
+            font-weight: 700;
+        }
+        .main-content {
+            display: flex;
+            gap: 40px;
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+        .content-block {
+            flex: 1;
+            background-color: #F5F7FA;
+            border-left: 8px solid #0056D2;
+            padding-top: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+            min-height: 400px;
+        }
+        .block-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            color: #1A1A1A;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .block-title i {
+            color: #0056D2;
+        }
+        .list-item {
+            margin-bottom: 20px;
+            display: flex;
+            gap: 15px;
+        }
+        .list-item i {
+            color: #0056D2;
+            font-size: 14px;
+            margin-top: 6px;
+        }
+        .list-text {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        .list-text strong {
+            color: #1A1A1A;
+        }
+        .footer-tag {
+            position: absolute;
+            bottom: 40px;
+            right: 80px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            color: #0056D2;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body><div class="slide-container">
+        <div class="accent-bar"></div>
+        <img src="https://private-us-east-1.manuscdn.com/sessionFile/VhGY2e6XkM8QlLEa9Lyh0u/sandbox/slides_resource_iloebs8uv69b1zmii16hu-dee63cc8-e2b-prod-sg1_1773762074944_na1fn_L2hvbWUvdWJ1bnR1L2NpdmlsM2RfdHJhaW5pbmdfcHJlc2VudGF0aW9uL21lZGlhL2xvZ28.webp?x-oss-process=image/resize,w_1560,h_1560/format,webp&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvVmhHWTJlNlhrTThRbExFYTlMeWgwdS9zYW5kYm94L3NsaWRlc19yZXNvdXJjZV9pbG9lYnM4dXY2OWIxem1paTE2aHUtZGVlNjNjYzgtZTJiLXByb2Qtc2cxXzE3NzM3NjIwNzQ5NDRfbmExZm5fTDJodmJXVXZkV0oxYm5SMUwyTnBkbWxzTTJSZmRISmhhVzVwYm1kZmNISmxjMlZ1ZEdGMGFXOXVMMjFsWkdsaEwyeHZaMjgud2VicD94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE1NjAsaF8xNTYwL2Zvcm1hdCx3ZWJwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=TzJj8KP5YroF0wtW8wP6lyuEvnxACcuX~fQFfiiQYN78t4XCgVRSzpAnp2-5gOW9d~3NNkwkFiLReRFuWqbutgECBCNgp9Zyhli9BM8VuUxQ2BV5f4S8TDcPgIPMS0PwSV3mRAFWpujvtywNq9-aDhjlkVFCMJHNAggTe5wlIop9OnGBf8PMkUw5WjB0PO~1lTa0Iv38tdooxaOBG9nOvmx0DAMJOvO3zexCGIJr1Da3rutBiuQ1ZPq60Bh2~ELHxvhaphsqk8bF9hQDM0j4yqnJIGb-m8qMX7Hdn9Qv3WAGYFidqirusTR-t2xz3bOiNu5iJpBEmqsIY-bt0oVCgg__" class="logo" alt="Visual Infra Logo" style="transform: translate(70px, -10.2812px);">
+        <div class="header">
+            <h1>Buổi 1-2: Tổng quan &amp; Dữ liệu đầu vào</h1>
+            <div class="subtitle">Nền tảng thiết kế đường chuyên nghiệp trên Civil 3D</div>
+        </div>
+        <div class="main-content">
+            <div class="content-block">
+                <div class="block-title">
+                    <i class="fas fa-cog"></i>
+                    <span>Quy trình &amp; Tiêu chuẩn</span>
+                </div>
+                <div class="list-item">
+                    <i class="fas fa-check-circle"></i>
+                    <div class="list-text"><strong>Giới thiệu Civil 3D:</strong> Ứng dụng trong thiết kế đường ngoài đô thị và hạ tầng kỹ thuật.</div>
+                </div>
+                <div class="list-item">
+                    <i class="fas fa-check-circle"></i>
+                    <div class="list-text"><strong>Tiêu chuẩn TCVN:</strong> Thiết lập các thông số kỹ thuật theo quy chuẩn Việt Nam hiện hành.</div>
+                </div>
+                <div class="list-item">
+                    <i class="fas fa-check-circle"></i>
+                    <div class="list-text"><strong>Quy trình thiết kế:</strong> Các bước triển khai một dự án tuyến đường từ sơ bộ đến kỹ thuật.</div>
+                </div>
+            </div>
+            <div class="content-block">
+                <div class="block-title">
+                    <i class="fas fa-database"></i>
+                    <span>Xử lý Dữ liệu &amp; Địa hình</span>
+                </div>
+                <div class="list-item">
+                    <i class="fas fa-file-import"></i>
+                    <div class="list-text"><strong>Dữ liệu đầu vào:</strong> Kỹ thuật xử lý Bình đồ, Text, Points và tệp tin .ntd đặc thù.</div>
+                </div>
+                <div class="list-item">
+                    <i class="fas fa-mountain"></i>
+                    <div class="list-text"><strong>Bề mặt TIN Surface:</strong> Xây dựng, hiệu chỉnh và tối ưu hóa mô hình địa hình tự nhiên.</div>
+                </div>
+                <div class="list-item">
+                    <i class="fas fa-chart-area"></i>
+                    <div class="list-text"><strong>Phân tích bề mặt:</strong> Đánh giá độ dốc, cao độ và phân tích lưu vực thoát nước (Watershed).</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-tag">CIVIL 3D TRAINING ● MODULE 01</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; color: #4A4A4A; background-color: #FFFFFF; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+        .accent-bar {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 12px;
+            background-color: #0056D2;
+        }
+        .logo {
+            position: absolute;
+            top: 30px;
+            right: 80px;
+            width: 100px;
+            height: auto;
+            object-fit: contain;
+        }
+        .header {
+            padding-top: 60px;
+            padding-left: 80px;
+            padding-right: 80px;
+            margin-bottom: 40px;
+        }
+        .header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 48px;
+            color: #1A1A1A;
+            text-transform: uppercase;
+        }
+        .header .module-tag {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            color: #0056D2;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+        .content-block {
+            border-left: 8px solid #0056D2;
+            background-color: #F5F7FA;
+            padding-top: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+            min-height: 400px;
+        }
+        .block-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            color: #1A1A1A;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .block-title i {
+            color: #0056D2;
+        }
+        .list-item {
+            margin-bottom: 20px;
+            display: flex;
+            gap: 15px;
+        }
+        .item-number {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            color: #0056D2;
+            min-width: 25px;
+        }
+        .item-text {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .footer {
+            margin-top: auto;
+            padding-left: 80px;
+            padding-right: 80px;
+            padding-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="accent-bar"></div>
+        <img src="https://private-us-east-1.manuscdn.com/sessionFile/VhGY2e6XkM8QlLEa9Lyh0u/sandbox/slides_resource_iloebs8uv69b1zmii16hu-dee63cc8-e2b-prod-sg1_1773762074944_na1fn_L2hvbWUvdWJ1bnR1L2NpdmlsM2RfdHJhaW5pbmdfcHJlc2VudGF0aW9uL21lZGlhL2xvZ28.webp?x-oss-process=image/resize,w_1560,h_1560/format,webp&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvVmhHWTJlNlhrTThRbExFYTlMeWgwdS9zYW5kYm94L3NsaWRlc19yZXNvdXJjZV9pbG9lYnM4dXY2OWIxem1paTE2aHUtZGVlNjNjYzgtZTJiLXByb2Qtc2cxXzE3NzM3NjIwNzQ5NDRfbmExZm5fTDJodmJXVXZkV0oxYm5SMUwyTnBkbWxzTTJSZmRISmhhVzVwYm1kZmNISmxjMlZ1ZEdGMGFXOXVMMjFsWkdsaEwyeHZaMjgud2VicD94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE1NjAsaF8xNTYwL2Zvcm1hdCx3ZWJwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=TzJj8KP5YroF0wtW8wP6lyuEvnxACcuX~fQFfiiQYN78t4XCgVRSzpAnp2-5gOW9d~3NNkwkFiLReRFuWqbutgECBCNgp9Zyhli9BM8VuUxQ2BV5f4S8TDcPgIPMS0PwSV3mRAFWpujvtywNq9-aDhjlkVFCMJHNAggTe5wlIop9OnGBf8PMkUw5WjB0PO~1lTa0Iv38tdooxaOBG9nOvmx0DAMJOvO3zexCGIJr1Da3rutBiuQ1ZPq60Bh2~ELHxvhaphsqk8bF9hQDM0j4yqnJIGb-m8qMX7Hdn9Qv3WAGYFidqirusTR-t2xz3bOiNu5iJpBEmqsIY-bt0oVCgg__" class="logo" alt="Visual Infra Logo">
+        <div class="header">
+            <span class="module-tag">MODULE 05</span>
+            <h1>Buổi 10: Thiết kế Nút giao & Khối lượng</h1>
+        </div>
+        <div class="content-grid">
+            <div class="content-block">
+                <div class="block-title">
+                    <i class="fas fa-road"></i>
+                    Thiết kế hình học nút giao
+                </div>
+                <div class="list-item">
+                    <div class="item-number">01</div>
+                    <div class="item-text">Thiết kế hình học chi tiết: Bán kính rẽ, đảo giao thông và các làn tách/nhập dòng.</div>
+                </div>
+                <div class="list-item">
+                    <div class="item-number">02</div>
+                    <div class="item-text">Thiết lập siêu cao và vuốt nối cao độ tại khu vực nút giao đảm bảo thoát nước.</div>
+                </div>
+                <div class="list-item">
+                    <div class="item-number">03</div>
+                    <div class="item-text">Kiểm tra tầm nhìn và an toàn giao thông theo các tiêu chuẩn hiện hành.</div>
+                </div>
+            </div>
+            <div class="content-block">
+                <div class="block-title">
+                    <i class="fas fa-calculator"></i>
+                    Tính toán khối lượng & Hồ sơ
+                </div>
+                <div class="list-item">
+                    <div class="item-number">01</div>
+                    <div class="item-text">Tính toán khối lượng đào đắp chi tiết cho toàn bộ khu vực nút giao theo TCVN.</div>
+                </div>
+                <div class="list-item">
+                    <div class="item-number">02</div>
+                    <div class="item-text">Xuất bảng tổng hợp khối lượng vật liệu và các cấu kiện hạ tầng kỹ thuật.</div>
+                </div>
+                <div class="list-item">
+                    <div class="item-number">03</div>
+                    <div class="item-text">Trình bày bản vẽ nút giao đạt chuẩn hồ sơ thiết kế kỹ thuật và bản vẽ thi công.</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <span>Civil 3D Training ● Thiết kế đường ngoài đô thị ● Chuyên sâu & Thực chiến</span>
+            <span>Trang 8</span>
+        </div>
+    </div>
+</body>
+</html>
